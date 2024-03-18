@@ -1,12 +1,12 @@
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 
-
-const getHomePage = (req, res) => {
+let getHomePage = (req, res) => {
     return res.send('hello world');
 }
 
 
-
-const postwebhook = (req, res) => {
+let postWebhook = (req, res) => {
     // Parse the request body from the POST
     let body = req.body;
 
@@ -32,9 +32,7 @@ const postwebhook = (req, res) => {
     }
 }
 
-const getWebHook = (req, res) => {
-
-    let VERIFY_TOKEN = process.env.VERIFY_TOKEN
+let getWebHook = (req, res) => {
 
     let mode = req.query['hub.mode']
     let token = req.query['hub.verify_token']
@@ -53,4 +51,4 @@ const getWebHook = (req, res) => {
 }
 
 
-module.exports = { getHomePage, getWebHook, postwebhook } 
+module.exports = { getHomePage, getWebHook, postWebhook } 

@@ -3,7 +3,7 @@ const router = express.Router();
 const chatBotController = require('../app/controllers/chatBotController');
 
 router.get('/', chatBotController.getHomePage);
-router.post('/webhook', chatBotController.postwebhook);
+router.post('/webhook', chatBotController.postWebhook);
 router.get('/webhook', chatBotController.getWebHook);
 
 
