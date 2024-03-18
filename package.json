@@ -1,15 +1,11 @@
 {
-  "name": "e-comic_be",
+  "name": "chatbotfb",
   "version": "1.0.0",
-  "description": "e-comic BE",
+  "description": "chatbotfb",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --inspect src/index.js",
     "start": "node src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git remote add origin https://github.com/dieptonn/E-comic_BE.git"
   },
   "author": "diepton",
   "license": "ISC",
