@@ -4,7 +4,7 @@ const chatBot = require('./chatbot')
 
 function route(app) {
 
-    app.use('', chatBot);
+    app.use('/', chatBot);
 
 }
 
